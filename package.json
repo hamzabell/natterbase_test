@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "builds": [{
+      "src": "app.js",
+      "use": "@now/node-server"
+  }]
   },
   "author": "Bassey Atanang Akan",
   "license": "ISC",
@@ -13,6 +17,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "now-cli": "^0.0.0"
   }
 }
